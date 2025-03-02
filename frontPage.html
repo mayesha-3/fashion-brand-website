@@ -18,6 +18,8 @@
     }
   </script>
   </head> <!--header-->
+  <body>
+
     <div class="header">
         <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
        
@@ -28,7 +30,7 @@
     <div class="menu" style="color: #ffffff;">
         
          <div style="width: 600px; background-color: #000000; display: flex; justify-content: space-between; align-items: center;">
-         <button class="button" type="button"><p style="color: #ffffff;">HOME</p></button>|
+         <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
          <button class="button" type="button">
           <select name="category" id="category" onchange="navigate()" style="color: #ffffff; background-color: #000000; border: none; border-radius: 0;">
             <option style="width: 300px;" class="categoryOption" value="none" >CATEGORIES</option>
@@ -41,7 +43,7 @@
          </button>|
 
           <button class="button" type="button"><p style="color: #ffffff;">SALE</p></button>|
-         <button class="button" type="button"><p style="color: #ffffff;">ABOUT US</p></button>|
+         <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
          <button class="button" type="button" onclick="window.location.href='login.html'">
           <p style="color: #ffffff;">LOGIN</p></button>|
           <button class="button" type="button"><p style="color: #ffffff;">MY CART</p></button>
@@ -120,12 +122,12 @@
    
     <hr>
     <div style="display: flex; justify-content: center;"><p style=" font-size: 20px;">---------  Top Categories  ---------</p></div> <br> <br>
-    <div class="category-main">
-        <div class="image"  ><img src="pic/womencat.jpg" alt="no img to show" width="200px"><p>WOMEN</p></div>
-            <div class="image"><img src="pic/mencat.jpg" alt="no img to show" width="200px"><p>MEN</p></div>
-                <div class="image"><img src="pic/kidscat.jpg" width="200px" alt="no img to show"><p >KIDS</p></div>
-                    <div class="image"> <img src="pic/accessories.jpg" width="200px" alt="no img to show"><p>ACCESORIES</p></div>
-                        <div class="image"><img src="pic/salecat.jpg" width="200px" alt="no img to show"><p>WEDDING</p></div>
+    <div class="category-main" style="width: 100%;">
+        <div class="image"  ><img src="pic/womencat.jpg" alt="no img to show" width="100%"><p>WOMEN</p></div>
+            <div class="image"><img src="pic/mencat.jpg" alt="no img to show" width="100%"><p>MEN</p></div>
+                <div class="image"><img src="pic/kidscat.jpg" width="100%" alt="no img to show"><p >KIDS</p></div>
+                    <div class="image"> <img src="pic/accessories.jpg" width="100%" alt="no img to show"><p>ACCESORIES</p></div>
+                        <div class="image"><img src="pic/salecat.jpg" width="100%" alt="no img to show"><p>WEDDING</p></div>
          
     </div>
     <div><br></div>

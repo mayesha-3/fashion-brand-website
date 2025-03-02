@@ -16,71 +16,10 @@
       window.location.href = url;
     }
   </script>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            width: 100%;
-        }
-        .signup-container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 320px;
-        }
-        .signup-container h2 {
-            margin-bottom: 20px;
-        }
-        .input-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .input-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .signup-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .signup-btn:hover {
-            background-color: #0056b3;
-        }
-        .login-note {
-            margin-top: 15px;
-            font-size: 14px;
-        }
-        .login-note a {
-            color: #28a745;
-            text-decoration: none;
-        }
-        .login-note a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+  </head> <!--header-->
+  <body>
 
-    <div class="header" style="width: 100%;">
+    <div class="header">
         <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
        
         <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
@@ -109,34 +48,28 @@
           <button class="button" type="button"><p style="color: #ffffff;">MY CART</p></button>
          </div>
     </div>
-   
+<br><br>
+<h3 style="justify-self: center; font-style: italic ;">---------  About Us  ---------</h3>
+<br>
+<p style="font-size: large; justify-self: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> "Renabelle, where tradition meets innovation in the heart of Bangladesh." </p>
+<br>
+<p style="width: 55%; font-size: 15px; justify-self: center;">
+    This ethical brand began in 1990 as a humble means to empower rural artisans to rise above poverty. Today, with 30 retail stores across Bangladesh and over 100 fashion and lifestyle product lines, Renabelle supports over 75,000 artisans with fair terms of trade. Revolutionising the retail industry with high standards for quality and artistry, this iconic brand blends the traditional with the contemporary in ways that never cease to win consumer appeal both at home and abroad.
 
-<div class="signup-container" style="justify-self: center;" >
-    <h2>Sign Up</h2>
-    <form action="welcome.html" method="POST">
-        <div class="input-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="input-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit" class="signup-btn">Sign Up</button>
-    </form>
-    <p class="login-note">Already have an account? <a href="login.html">Login</a></p>
-</div>
+    <br> <br> In 1976, when RAC– the world’s largest development organisation – engaged a small number of rural women to produce crafts, their only buyers were a few scattered retailers in Dhaka. Weeks, even months would pass between supply and payment, until RAC intervened and established Renabelle to pay the rural women for their goods on time. Over the past four decades, Renabelle has carved out a unique market segment for handicrafts, reviving Bangladesh’s rich heritage and impacting the lives of more than 325,000 people through 650 small entrepreneurs and the Ayesha Jabed Foundation. The foundation acts as Renabelle’s production hub, where artisans find employment and access to many well-being programmes such as health insurance, access to micro-credit and saving instruments, legal aid, day care for working mothers, awareness on rights and access to government benefits, and gratuity payments upon retirement.
+    
+   <br> <br> From clay pots to diamond jewellery, and silk and cotton fabrics to brass and leather products, Renabelle’s vast range of innovative products, backed by a robust supply chain and distribution network, makes Renabelle truly a household brand in Bangladesh. Its growing presence outside of Bangladesh – through fair-trade networks and the online shop– continues to broaden the market for Bangladeshi crafts globally, creating more opportunities for artisans to protect their age-old art and livelihoods.
+</p>
 
-   <!-- FOOTER -->
-   <div>
+<div><br><br><br>
+    <div style="display: flex; align-items: center; justify-content:space-between; background-color: #00000021; padding-top: 25px; padding-bottom: 25px;">
+      <div style="padding-left: 5%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/CQu4VkZ3Wj4?si=dEHscQZ-5i055O5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div style="font-size: 45px; padding-right: 10%; background-color: #00000021; height: 315;">OUR LATEST SHOW</div>
+
+   </div>
+    <hr>
+       <!-- FOOTER -->
+<div>
     <div class="subscribe" >JOIN OUR NEWSLETTER
       <input type="email" placeholder="Enter email..." style="width: 300px; height: 20px;">
   </div>
@@ -150,8 +83,6 @@
   </div>
   </div>
      <hr>
-  
-     
-  </body>
-  </html>
-  
+
+</body>
+    </html>
