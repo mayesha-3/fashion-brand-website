@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Grid with Sidebar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+        }
+        .sidebar {
+            width: 270px;
+            background: #343a40;
+            color: white;
+            padding: 30px;
+            height: 100vh;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .catalog-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(20% - 20px);
+            text-align: center;
+        }
+        .catalog-item img {
+            width: 100%;
+            height: 200%
+            border-radius: 10px;
+        }
+        .catalog-item h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+        .catalog-item p {
+            font-size: 14px;
+            color: #555;
+        }
+        .subscribe{
+    margin: auto;
+    color: white;
+    background-color: #000000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    font-size: 30px;
+}
+.footer{
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+}
+.category:hover{
+    background-color: #0e5812;
+}
+        @media (max-width: 1024px) {
+            .catalog-item {
+                width: calc(33.33% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            .catalog-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .catalog-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    
+        <div><div class="content" style="display: flex; width: 100%; justify-content: center;">
+            <div class="catalog-container">
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0120000034932_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Yellow Printed Cotton  T-shirt</h3>
+                    <p>Price: 530.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0120000034682.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Chocolate Printed Cotton T-shirt</h3>
+                    <p>Price: 525.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0120000034152.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Mint Green Printed Cotton T-shirt</h3>
+                    <p>Price: 1,995.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0120000035027.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Black Printed Cotton T-Shirt</h3>
+                    <p>Price: 550.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/0/0020000107772.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Blue Printed Endi Slik Panjabi </h3>
+                    <p>Price:4,695.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/0/0040000102901.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Plum Arri Embroidered Endi Slik Panjabi</h3>
+                    <p>Price:5,650.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/0/0030000134487.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Brown Embroidered Viscose- Cotton Panjabi</h3>
+                    <p>Price:2,00.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/0/0030000136223.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Olive Mustered Striped Embroidered Mixed Cotton Panjabi</h3>
+                    <p>Price:2,120.00TK</p>
+                    <button>Add to cart</button>
+               </div>
+               <div class="catalog-item">
+                <img src="https://www.aarong.com/media/catalog/product/0/1/0100000092125.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                <h3>Green Embroidered Endi Slik Coaty</h3>
+                <p>Price:3,120.00.00TK</p>
+                <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0110000094559.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Grey Textured Cotton Coaty </h3>
+                    <p>Price:1,586.00TK</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0110000094194_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Black Cotton Coaty</h3>
+                    <p>Price:1,595.00TK</p>
+                    <button>Add to cart</button>
+    
+                   </div>
+                   <div class="catalog-item">
+                    <img src="https://www.aarong.com/media/catalog/product/0/1/0110000094744.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                    <h3>Brick Red Textured Cotton Coaty </h3>
+                    <p>Price:1,413.00TK</p>
+                    <button>Add to cart</button>
+    
+                    </div>
+                    <div class="catalog-item">
+                        <img src="https://www.aarong.com/media/catalog/product/0/0/0060000151755_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                        <h3>Brown Printer Cotton Shirt</h3>
+                        <p>Price:780.00TK</p>
+                        <button>Add to cart</button>
+                      </div>
+                      <div class="catalog-item">
+                        <img src="https://www.aarong.com/media/catalog/product/0/0/0070000057009.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                        <h3>Blue Check cotton Fitted Shirt</h3>
+                        <p>Price:800.00TK</p>
+                        <button>Add to cart</button>
+                      </div>
+                      <div class="catalog-item">
+                        <img src="https://www.aarong.com/media/catalog/product/0/0/0070000055981_2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                        <h3>Blue Striped Executive Shirt</h3>
+                        <p>Price: 2116.00TK</p>
+                        <button>Add to cart</button>
+    
+                      </div>
+                      <div class="catalog-item">
+                        <img src="https://www.aarong.com/media/catalog/product/0/0/0070000055827.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+                        <h3>Black Mixed Cotton Executive Shirt </h3>
+                        <p>Price:2,200.00TK</p>
+                        <button>Add to cart</button>
+                      </div>
+                      
+    
+    <hr>
+        </div>
+        <hr>
+    </div>
+    <div>
+         
+    </div>
+    </div>
+   
+</body>
+</html>
