@@ -1,10 +1,11 @@
-<!DOCTYPE html>
- <lang="en">
+<DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet1" href="men.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
@@ -16,71 +17,10 @@
       window.location.href = url;
     }
   </script>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            
-        }
-        .signup-container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 320px;
-        }
-        .signup-container h2 {
-            margin-bottom: 20px;
-        }
-        .input-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .input-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .signup-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #176a1b;
-            color: white;
-            border: none;
-            border-color: black;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .signup-btn:hover {
-            background-color: #0e4310;
-        }
-        .login-note {
-            margin-top: 15px;
-            font-size: 14px;
-        }
-        .login-note a {
-            color: #28a745;
-            text-decoration: none;
-        }
-        .login-note a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+  </head> <!--header-->
+  <body>
 
-    <div class="header" style="width: 100%;">
+    <div class="header">
         <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
        
         <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
@@ -103,39 +43,14 @@
          </button>|
 
           <button class="button" type="button"><p style="color: #ffffff;">SALE</p></button>|
-         <button class="button" type="button" onclick="window.location.href='aboutUs.html'"><p style="color: #ffffff;">ABOUT US</p></button>|
-         <button class="button" type="button" onclick="window.location.href='login.html'">
-          <p style="color: #ffffff;">LOGIN</p></button>|
+         <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
+         <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
           <button class="button" type="button"><p style="color: #ffffff;">MY CART</p></button>
          </div>
     </div>
-   
+    
 
-<div class="signup-container" style="justify-self: center;" >
-    <h2>Sign Up</h2>
-    <form action="welcome.html" method="POST">
-        <div class="input-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="input-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit" class="signup-btn">Sign Up</button>
-    </form>
-    <p class="login-note">Already have an account? <a href="login.html">Login</a></p>
-</div>
-
-   <!-- FOOTER -->
+       <!-- FOOTER -->
    <div>
     <div class="subscribe" >JOIN OUR NEWSLETTER
       <input type="email" placeholder="Enter email..." style="width: 300px; height: 20px;">
@@ -154,4 +69,3 @@
      
   </body>
   </html>
-  

@@ -80,3 +80,7 @@ hr{
 .category:hover{
     background-color: #0e5812;
 }
+.imgab{
+    width: 30%;
+    height: 200px;
+}
