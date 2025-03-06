@@ -46,10 +46,11 @@ body {
 .category-main{
     display: flex;
     justify-content: center;
+    
 }
 .image{
     height: 250px;
-    width: 210px;
+    width: 100%;
     border-style: groove;
     border-color: #22212134;
    padding: 25px;
