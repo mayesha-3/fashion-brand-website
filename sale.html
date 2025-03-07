@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet1" href="men.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+   <!-- CATEGORY JS-->
+   <script>
+    function navigate() {
+      var select = document.getElementById('category');
+      var url = select.options[select.selectedIndex].value;
+      window.location.href = url;
+    }
+  </script>
+      <script>
+        window.onscroll = function()
+        {
+          var menu = document.getElementById("menu");
+          if (window.scrollY > 0)
+        {
+          menu.style.position = "sticky";
+          menu.style.top = "0px";
+          menu.style.opacity = ".9";
+          menu.style.height = "6%";
+        }
+        else
+        {menu.style.position = "static";
+          menu.style.opacity = "1";
+        }
+        }
+      </script>
+  </head> <!--header-->
+  <body>
+
+    <div class="header">
+        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+       
+        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+    </div><hr>
+
+<!--MENU-->
+    <div class="menu" id="menu" style="color: #ffffff;" >
+        
+         <div style="width: 600px; background-color: #000000; display: flex; justify-content: space-between; align-items: center;">
+         <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
+         <button class="button" type="button">
+          <select name="category" id="category" onchange="navigate()" style="color: #ffffff; background-color: #000000; border: none; border-radius: 0;">
+            <option style="width: 300px;" class="categoryOption" value="none" >CATEGORIES</option>
+            <option style="width: 300px;" class="categoryOption" value="women.html">Women</option>
+            <option style="width: 300px;" class="categoryOption" value="men1.html">Men</option>
+            <option style="width: 300px;" class="categoryOption" value="kids.html">Kids</option>
+            
+            <option style="width: 300px;" class="categoryOption" value="accessories.html">Accessories</option>
+            <option style="width: 300px;" class="categoryOption" value="wedding.html">Wedding</option>
+          </select>
+         </button>|
+
+
+          <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
+
+         <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
+         <button class="button" type="button" onclick="window.location.href='login.html'">
+          <p style="color: #ffffff;">LOGIN</p></button>|
+          <button class="button" type="button" onclick="window.location.href='myCart.html'"><p style="color: #ffffff;">MY CART</p></button>
+         </div>
+    </div>
+    <br><br><br><br>
+  
+    <h1 id="bride" style="display: flex; justify-self: center;">Men</h1>
+    <div class="CardsContainer">
+        
+        <div class="cards" id="cards" style=" ">
+            <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/1/0120000034152.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
+            
+         <div class="details">
+             <div> Geometrical shirt </div>
+             <div style="text-decoration: line-through;">1,995tk</div>
+            <div> 990tk</div>
+            <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+        
+         </div> 
+     </div>
+     <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/0/0070000055827.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
+        
+     <div class="details">
+         <div> Mixed cotton shirt black </div>
+         <div style="text-decoration: line-through;">2,200tk</div>
+        <div> 1,800tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+    </div>
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/s.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+    </div>
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/r.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+    </div>
+    <div class="cards" id="cards" style=" margin-top: 20px;">
+        <div> <img class="weddingImg" src="wedpic/q.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+    </div>
+</div>
+<br><br><br><br>
+<h1 id="bride" style="display: flex; justify-self: center;">Women</h1>
+<div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/1.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/2.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+</div>
+<br><br><br><br>
+<h1 id="bride" style="display: flex; justify-self: center;">Kids</h1>
+<div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/1.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/2.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+</div>
+<br><br><br><br>
+
+<h1 id="bride" style="display: flex; justify-self: center;">Accessories</h1>
+<div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/1.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Lehenga </div>
+         <div style="text-decoration: line-through;">20,000tk</div>
+        <div> 15,399 tk</div>
+        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/2.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Lehenga </div>
+     <div style="text-decoration: line-through;">20,000tk</div>
+    <div> 15,399 tk</div>
+    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+
+ </div> 
+</div>
+</div>
+<br><br><br><br><br>
+      <!-- FOOTER -->
+      <div>
+        <div class="subscribe" >JOIN OUR NEWSLETTER
+          <input type="email" placeholder="Enter email..." style="width: 300px; height: 20px;">
+      </div>
+      <div style="width: 100%; background-color: #000000; display: flex; justify-content: center; align-items: last baseline; height: 80px;">
+    
+        <div class="footer" >
+          <div><button class="button" type="button" onclick="window.location.href='terms.html'"><p style="color: rgba(255, 255, 255, 0.856); ">Terms and Conditions</p></button></div>|
+          <div><button class="button" type="button"  onclick="window.location.href='license.html'"><p style="color: rgba(255, 255, 255, 0.856); ">License Agreements</p></button></div>|
+          <div><button class="button" type="button"  onclick="window.location.href='aboutUs.html'"><p style="color: rgba(255, 255, 255, 0.856); ">Our Story</p></button></div>
+    
+      </div>
+      
+      </div>
+      </div>
+         <hr>
+    
+    </body>
+        </html>
