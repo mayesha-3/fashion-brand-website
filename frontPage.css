@@ -85,3 +85,60 @@ hr{
     width: 30%;
     height: 200px;
 }
+.cards{
+    margin-left: 20%;
+   
+    width: 250px;
+    height: 450px;
+    
+}
+.details{
+ padding-left: 10%;
+ padding-top: 10px;
+ padding-bottom: 20px;
+ 
+}
+.weddingImg{
+width: 90%;
+display: flex;
+justify-self: center;
+}
+.addToCart_button{
+ width: 50%;
+ display: flex;
+}
+.CardsContainer{
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.wedlink{
+    color: #000000;
+
+}
+#mySidenav a {
+    position: sticky;
+    top: 30%;
+    left: -40px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #bride1 {
+    top: 34%;
+    background-color: black;
+  }
+  
+  #groom1 {
+    top: 44%;
+    background-color: black;
+  }
