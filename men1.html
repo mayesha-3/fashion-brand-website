@@ -16,6 +16,24 @@
       window.location.href = url;
     }
   </script>
+    </script>
+    <script>
+      window.onscroll = function()
+      {
+        var menu = document.getElementById("menu");
+        if (window.scrollY > 0)
+      {
+        menu.style.position = "sticky";
+        menu.style.top = "0px";
+        menu.style.opacity = ".6";
+        menu.style.height = "6%";
+      }
+      else
+      {menu.style.position = "static";
+        menu.style.opacity = "1";
+      }
+      }
+    </script>
 
 <style>
     body {
@@ -119,11 +137,11 @@ background-color: #0e5812;
          <button class="button" type="button">
           <select name="category" id="category" onchange="navigate()" style="color: #ffffff; background-color: #000000; border: none; border-radius: 0;">
             <option style="width: 300px;" class="categoryOption" value="none" >CATEGORIES</option>
-            <option style="width: 300px;" class="categoryOption" value="https://example.com/">Women</option>
+            <option style="width: 300px;" class="categoryOption" value="women.html">Women</option>
             <option style="width: 300px;" class="categoryOption" value="men1.html">Men</option>
-            <option style="width: 300px;" class="categoryOption" value="https://example.com/">Kids</option>
-            <option style="width: 300px;" class="categoryOption" value="https://example.com/">Accessories</option>
-            <option style="width: 300px;" class="categoryOption" value="https://example.com/">Wedding</option>
+            <option style="width: 300px;" class="categoryOption" value="kids.html">Kids</option>
+            <option style="width: 300px;" class="categoryOption" value="accessories.html">Accessories</option>
+            <option style="width: 300px;" class="categoryOption" value="wedding.html">Wedding</option>
           </select>
          </button>|
 
