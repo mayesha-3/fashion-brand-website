@@ -17,6 +17,24 @@
       window.location.href = url;
     }
   </script>
+    </script>
+    <script>
+      window.onscroll = function()
+      {
+        var menu = document.getElementById("menu");
+        if (window.scrollY > 0)
+      {
+        menu.style.position = "sticky";
+        menu.style.top = "0px";
+        menu.style.opacity = ".6";
+        menu.style.height = "6%";
+      }
+      else
+      {menu.style.position = "static";
+        menu.style.opacity = "1";
+      }
+      }
+    </script>
   </head> <!--header-->
   <body>
 

@@ -35,9 +35,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: auto;
-    
-    
+    margin: auto;  
+    position: static;
+    top: 0px; 
 }
 .video{
     width: 100%;
