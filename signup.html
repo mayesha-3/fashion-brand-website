@@ -18,6 +18,7 @@
   </script>
 <style>
         body {
+            
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             display: flex;
@@ -27,6 +28,7 @@
             
         }
         .signup-container {
+            position: relative;
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -76,14 +78,25 @@
         .login-note a:hover {
             text-decoration: underline;
         }
+        .backArrow{
+    border-radius: 50%;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    left:-70px;
+  }
     </style>
 </head>
-<body>
+<body style="background-image: url(pic/about3.webp); background-repeat: no-repeat; background-size: cover;">
 
   
 
 <div style="padding-top: 19%; padding-bottom: 19%;">
     <div class="signup-container">
+        <div class="login-container" style="justify-self: center;">
+            <div >
+                <img class="backArrow" src="pic/arrow.png" alt="" onclick="window.location.href='frontPage.html'">
+            </div>
         <h2>Sign Up</h2>
         <form action="welcome.html" method="POST">
             <div class="input-group">

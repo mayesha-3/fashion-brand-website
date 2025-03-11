@@ -30,6 +30,7 @@
         width: 100%;
     }
     .login-container {
+        position: relative;
         background: white;
         padding: 20px;
         border-radius: 8px;
@@ -78,15 +79,26 @@
     .signup-note a:hover {
         text-decoration: underline;
     }
+    .backArrow{
+    border-radius: 50%;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    left:-70px;
+  }
 </style>
   </head> <!--header-->
-  <body>
+  <body style="background-image: url(pic/about3.webp); background-repeat: no-repeat; background-size: cover;">
 
 
    
 
 <div style="padding-top: 30%;">
+   
     <div class="login-container" style="justify-self: center;">
+        <div >
+            <img class="backArrow" src="pic/arrow.png" alt="" onclick="window.location.href='frontPage.html'">
+        </div>
         <h2>Login</h2>
         <form action="dashboard.html" method="POST">
             <div class="input-group">
