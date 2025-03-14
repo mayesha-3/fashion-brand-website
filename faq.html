@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -66,102 +66,67 @@
          </div>
     </div>
 
-    
+   <!--content--> 
+   <div style="display: flex; position: relative;"><img  style="width: 100%; height: 300px;" src="pic/fabricshiny.jpg" alt=""></div>
+    <div class="container">
+ <div class="sidebar">
+      <ul type="none";>
+        <li class="list-header">CLIENT SERVICES</li>
+        <li><a href="contactUs.html" class="footer-list">Contact Us</a></li>
+        <li><a href="appointment.html" class="footer-list">Book an Appointment</a></li>
+        <li><a href="services.html" class="footer-list">Our Services</a></li>
+        <li><a href="faq.html" class="footer-list">FAQs</a></li>
+        
+      </ul>
+    </div>
+    <div class="content"><pre><p class="list-header">Frequently Asked Questions  </p>
+    <p class="paragraphs">        
+<b>On renabelle.com you can: </b>
 
+Browse the latest collections for Women, Men, and Kids. 
+Watch the Fashion Show and discover the Runway looks.
+Access special previews, our advertising campaigns and exclusive content.
+If you are looking for a specific item, you can search by keywords or product code. You can check 
+availability of each item in your nearest Fendi store directly from the product page.
+
+        </p>
+<p class="paragraphs">
+<b>Q: How can I track my order?</b><br>
+     A: Once your order has been shipped, you will receive an email with the tracking 
+     number and a link to track your package.
+</p>
+<p class="paragraphs">
+<b>Q: What is your return policy?</b><br>
+     A: We accept returns within 30 days of purchase. Items must be in their original 
+     condition with all tags attached. Please visit our Returns page for more details.
+</p>
+<p class="paragraphs">
+<b>Q: Do you offer international shipping?</b><br>
+     A: Yes, we ship to many countries worldwide. Shipping costs and delivery times 
+     vary depending on the destination. Please check our Shipping Information page 
+     for more details.
+</p>
+<p class="paragraphs">
+<b>Q: How can I contact customer service?</b><br>
+     A: You can contact our customer service team via email at support@renabelle.com 
+     or by calling our toll-free number at 1-800-123-4567.
+</p>
+<p class="paragraphs">
+<b>Q: Can I change or cancel my order?</b><br>
+     A: If you need to change or cancel your order, please contact us as soon as 
+     possible. We will do our best to accommodate your request, but please note that 
+     orders that have already been processed cannot be modified.
+</p>
+
+
+
+
+
+
+    </pre></div>
  
-<!-- SLIDE SHOW -->
-<div class="container" style="display: flex; justify-content: center;">
-    <div class="arrow arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
-    <img class="imag" src="pic/cover.jpg" alt="" style="width: 95%;">
-    <img class="imag" src="pic/cover2.jpg" alt="" style="width: 95%;">
-    <img class="imag" src="pic/covkids.jpg" alt="" style="width: 95%;">
-    <div class="arrow arrow-right"><i class="fas fa-chevron-circle-right"></i>
-    </div>
-    <div class="dots">
-      <div class="dot">
-        <i class="far fa-dot-circle"></i>
-      </div>
-      <div class="dot">
-        <i class="far fa-circle"></i>
-      </div>
-      <div class="dot">
-        <i class="far fa-circle"></i>
-      </div>
-    </div>
-  </div>
-  <script>
-
-    const imgs = document.querySelectorAll(".container img");
-    const dots = document.querySelectorAll(".dot i");
-    const leftArrow = document.querySelector(".arrow-left");
-    const rightArrow = document.querySelector(".arrow-right");
-     
-    let currentIndex = 0;
-    let time = 5000; // default time for auto slideshow
-     
-    const defClass = (startPos, index) => {
-      for (let i = startPos; i < imgs.length; i++) {
-        imgs[i].style.display = "none";
-        dots[i].classList.remove("fa-dot-circle");
-        dots[i].classList.add("fa-circle");
-      }
-      imgs[index].style.display = "block";
-      dots[index].classList.add("fa-dot-circle");
-    };
-     
-    defClass(1, 0);
-     
-    leftArrow.addEventListener("click", function(){
-      currentIndex <= 0 ? currentIndex = imgs.length-1 : currentIndex--;
-      defClass(0, currentIndex);
-    });
-     
-    rightArrow.addEventListener("click", function(){
-      currentIndex >= imgs.length-1 ? currentIndex = 0 : currentIndex++;
-      defClass(0, currentIndex);
-    });
-     
-    const startAutoSlide = () => {
-      setInterval(() => {
-        currentIndex >= imgs.length-1 ? currentIndex = 0 : currentIndex++;
-        defClass(0, currentIndex);
-      }, time);
-    };
-     
-    startAutoSlide(); // Start the slideshow
-          </script>
-<br>
-<div style="display: flex; justify-content: center;"> <p style="height: 30px;" >COMFORT . ART . STYLE </p> </div>
-<!-- CATEGORY -->
-    <br><br>
-
 </div>
-   
-    <hr>
-    <div style="display: flex; justify-content: center;"><p style=" font-size: 20px;">---------  Top Categories  ---------</p></div> <br> <br>
-    <div class="category-main" style="width: 100%;">
-        <div class="image"  ><img src="pic/womencat.jpg" alt="no img to show" width="100%"><p>WOMEN</p></div>
-            <div class="image"><img src="pic/mencat.jpg" alt="no img to show" width="100%"><p>MEN</p></div>
-                <div class="image"><img src="pic/kidscat.jpg" width="100%" alt="no img to show"><p >KIDS</p></div>
-                    <div class="image"> <img src="pic/accessories.jpg" width="100%" alt="no img to show"><p>ACCESORIES</p></div>
-                        <div class="image"><img src="pic/salecat.jpg" width="100%" alt="no img to show"><p>WEDDING</p></div>
-         
-    </div>
-    <div><br></div>
-    <hr>
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-           <div> <p style="font-size: 20px; font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;width: 300px; padding-left: 30px;"> Story behind the name?</p></div>
-           <div> <p> The name RENABELLE means <i>Joyous Beauty.</i> The brand originates from the vision to bring a fresh perspective to fashion by blending the rich cultural heritage with contemporary design. The brand's founder, inspired by the meanings of "rebirth" and "beauty" embedded in the name, sought to create clothing that embodies elegance, sophistication, and timeless charm. Today, Renabelle stands as a symbol of innovation and creativity, redefining elegance for a global audience while staying true to its roots.</p></div>
-    </div>
-   <div><br> <hr> <br><br>
-    <div style="display: flex; align-items: center; justify-content:space-between;  padding-top: 25px; padding-bottom: 25px;">
-      <div style="padding-left: 5%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/CQu4VkZ3Wj4?si=dEHscQZ-5i055O5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div style="font-size: 45px; padding-right: 10%; background-color: #33303084; height: 315;">OUR LATEST SHOW</div>
-
-   </div>
-    <hr>
-    
-    <!-- FOOTER -->
+ <!-- FOOTER -->
 <div class="subscribe">
     <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
     <div><input type="email" placeholder="Enter email..." style="width: 300px; height: 35px; margin-left: 40px;"></div>
