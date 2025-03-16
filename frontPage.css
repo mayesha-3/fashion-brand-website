@@ -26,11 +26,11 @@ body {
 }
 .button:hover{
 
-    background-color: #745214;
+    background-color: #0e4310;
 }
 .menu{
     display: flex;
-    background-color: #89621b;
+    background-color: #0c0c0c;
     font-size: medium;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,13 @@ body {
     margin: auto;  
     position: static;
     top: 0px; 
+}
+.menus{
+    width: 600px; 
+    background-color: #0c0c0c; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 .video{
     width: 100%;
@@ -61,13 +68,14 @@ hr{
 .subscribe{
     
     color: white;
-    background-color: #89621b;
+    background-color: #000000;
     height: 60px;
     display: flex;
     align-items: center;
     font-size: 30px;
     padding-bottom: 20px;
     padding-top: 3%;
+    opacity: .91;
 }
 .newsletter{
     margin-left: 21%;
@@ -117,7 +125,7 @@ li {
 }
 
 .category:hover{
-    background-color: #000000;
+    background-color: #0e4310;
 }
 .imgab{
     width: 30%;
@@ -151,8 +159,8 @@ justify-self: center;
  height: 40px;
  display: flex;
  font-size: 15px;
- background-color: #89621b;
- opacity: .8;
+ background-color: #000000;
+ opacity: 1;
  color: white;
  border: none;
  border-radius: 6%;
@@ -164,6 +172,7 @@ justify-self: center;
     opacity: 1;
     width: 50%;
     border-radius: 4%;
+    background-color: #0e4310;
 }
 .CardsContainer{
     width: 400px;
@@ -190,8 +199,8 @@ justify-self: center;
   
   #mySidenav a:hover {
    color: #ffffff ;
-   background-color: #89621b;
-   border: #89621b;
+   background-color: #0e4310;
+   border: #0e4310;
    opacity: 1;
    padding-left: 24px;
    padding-right: 24px;
@@ -200,12 +209,12 @@ justify-self: center;
   
   #bride1 {
     opacity: .9;
-    background-color: #89621b;
+    background-color: #0e4310;
   }
   
   #groom1 {
     opacity: .9;
-    background-color: #89621b;
+    background-color: #0e4310;
   }
 
   .headerImg{
@@ -220,7 +229,7 @@ justify-self: center;
             
         }
         .dropdown-btn {
-            background-color: #89621b;
+            background-color: #0c0c0c;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -229,13 +238,13 @@ justify-self: center;
             
         }
         .dropdown-btn:hover {
-            background-color: #745214;
+            background-color: #0e4310;
             opacity: 1;
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #89621b;
+            background-color: #0c0c0c;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             min-width: 150px;
             z-index: 9999;
@@ -247,19 +256,20 @@ justify-self: center;
             display: block;
         }
         .dropdown-content a:hover {
-            background-color: #745214;
+            background-color: #0e4310;
         }
         .dropdown:hover .dropdown-content {
             display: block;
         }
 .content{
     position: relative;
-    width: 70%;
+    width: 80%;
     font-size: 15px;
+    margin-left: 30px;
 }
 .sidebar{
     position: relative;
-    width: 30%;
+    width: 20%;
     font-size: 20px;
     right: 0px;
 }

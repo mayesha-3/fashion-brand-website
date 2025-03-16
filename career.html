@@ -1,4 +1,97 @@
-   <!-- FOOTER -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet1" href="men.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+   <!-- CATEGORY JS-->
+   <script>
+    function navigate() {
+      var select = document.getElementById('category');
+      var url = select.options[select.selectedIndex].value;
+      window.location.href = url;
+    }
+  </script>
+      <script>
+        window.onscroll = function()
+        {
+          var menu = document.getElementById("menu");
+          if (window.scrollY > 0)
+        {
+          menu.style.position = "sticky";
+          menu.style.top = "0px";
+          menu.style.opacity = ".9";
+          menu.style.height = "6%";
+          menu.style.zIndex="3";
+        }
+        else
+        {menu.style.position = "static";
+          menu.style.opacity = "1";
+        }
+        }
+      </script>
+  </head> <!--header-->
+  <body>
+
+    <div class="header">
+        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+       
+        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+    </div><hr>
+
+<!--MENU-->
+    <div class="menu" id="menu" style="color: #ffffff;" >
+        
+<div class="menus" style="">
+           <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
+            <div class="dropdown">
+        <button class="dropdown-btn">Categories</button>
+        <div class="dropdown-content">
+            <a href="women.html">Women</a>
+            <a href="men1.html">Men</a>
+            <a href="kids.html">Kids</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="wedding.html">Wedding</a>
+        </div>
+    </div>|
+        <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
+          <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
+           <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
+          <button class="button" type="button" onclick="window.location.href='myCart.html'"><p style="color: #ffffff;">MY CART</p></button>
+         </div>
+    </div>
+
+   <!--content--> 
+   <div style="display: flex; position: relative;"><img  style="width: 100%; height: 300px;" src="pic/fabricmix.jpg" alt=""></div>
+    <div class="container" style="margin-bottom: 200px;">
+ <div class="sidebar">
+      <ul type="none">
+      <li class="list-header">CORPORATE</li>
+      <li><a href="aboutUs.html" class="footer-list">About Us</a></li>
+      <li><a href="locations.html" class="footer-list">Store Locations</a></li>
+      <li><a href="career.html" class="footer-list">Career with us</a></li>
+    </ul>
+    </div>
+    
+    <div class="content">
+        <p class="list-header">Career</p>
+<div style="width: 100%; height: 400px; background-color: rgba(28, 166, 176, 0.502); display: grid; grid-template-columns: 2;">
+  <div>professional areas</div>
+    <div>internships</div>
+</div>
+    
+</div>
+
+
+    </div>
+ 
+</div>
+ <!-- FOOTER -->
 <div class="subscribe">
     <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
     <div><input type="email" placeholder="Enter email..." style="width: 300px; height: 35px; margin-left: 40px;"></div>
