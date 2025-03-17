@@ -209,12 +209,12 @@ justify-self: center;
   
   #bride1 {
     opacity: .9;
-    background-color: #0e4310;
+    background-color: #000000;
   }
   
   #groom1 {
     opacity: .9;
-    background-color: #0e4310;
+    background-color: #000000;
   }
 
   .headerImg{
@@ -296,6 +296,10 @@ justify-self: center;
 }
 .list-header{
     font-size: 25px;
+}
+.list-header1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .paragraphs{
     font-size: 15px;
