@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Renabelle Sale</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
     <link rel="stylesheet" href="frontPage.css">
     <link rel="stylesheet1" href="men.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="http<s://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <!-- CATEGORY JS-->
    <script>
     function navigate() {
@@ -39,33 +41,69 @@
   <body>
 
     <div class="header">
-        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
-       
-        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
-    </div><hr>
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
 
 <!--MENU-->
     <div class="menu" id="menu" style="color: #ffffff;" >
         
 <div class="menus" style="">
            <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
-            <div class="dropdown">
-        <button class="dropdown-btn">Categories</button>
-        <div class="dropdown-content">
-            <a href="women.html">Women</a>
-            <a href="men1.html">Men</a>
-            <a href="kids.html">Kids</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="wedding.html">Wedding</a>
-        </div>
-    </div>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a >Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
         <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
           <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
            <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
           <button class="button" type="button" onclick="window.location.href='myCart.html'"><p style="color: #ffffff;">MY CART</p></button>
          </div>
     </div>
-
     <br><br><br><br>
   
     <h1 id="bride" style="display: flex; justify-self: center;">Men</h1>
@@ -78,10 +116,44 @@
              <div> Geometrical shirt </div>
              <div style="text-decoration: line-through;">1,995tk</div>
             <div> 990tk</div>
-            <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+            <button class="cart-button" id="dress" data-value="0" data-id=" Geometrical shirt" data-name=" Geometrical shirt" data-price="990">
+              <span class="add-to-cart">Add to cart</span>
+              <span class="added">Added</span>
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-box"></i>
+            </button>
         
          </div> 
      </div>
+
+         <div class="addtocartpopup" >
+    <div id="closePopup" class="closePopup" style="cursor: pointer; "><i class="fa fa-times"></i></div>
+<div style="justify-items: baseline;"><br>
+  <div><label for="size">Size: 
+  <select style="height: 30px;" name="size" id="size" >
+    <option class="option" value="Small" data-size="Small">S</option>
+    <option class="option" value="Medium" data-size="Medium">M</option>
+    <option class="option" value="Large" data-size="Large">L</option>
+    <option class="option" value="Extra-large" data-size="Extra-Large">XL</option>
+  </select>
+</label></div>
+<div>
+  
+<form action="Quantity">
+  <label for="quantity" style="justify-self: center;">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" data-Quantity="value" >
+</form>
+</div>
+<div>
+</div>
+  </div><br>
+ <button class="addedToCartButton" id="">
+  <span class="add-to-cart">Add to cart</span>
+
+</button>
+
+
+</div>
      <div class="cards" id="cards" style=" ">
         <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/0/0070000055827.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
         
@@ -89,56 +161,82 @@
          <div> Mixed cotton shirt black </div>
          <div style="text-decoration: line-through;">2,200tk</div>
         <div> 1,800tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Mixed cotton shirt black" data-name=" Mixed cotton shirt black" data-price="1800">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+     </div> 
+    </div>
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/1/0110000094194_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+        
+     <div class="details">
+<div> Black Cotton Coaty </div>
+         <div style="text-decoration: line-through;">2000tk</div>
+        <div> 1548tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Black Cotton Coaty" data-name="Black Cotton Coaty" data-price="1548">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
     
      </div> 
     </div>
     <div class="cards" id="cards" style=" ">
-        <div> <img class="weddingImg" src="wedpic/s.avif" alt=""></div>
+                                 <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/0/0030000134487.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"" alt=""></div>
         
      <div class="details">
-<div> Ivory Embroidered Silk </div>
-         <div style="text-decoration: line-through;">20,000tk</div>
-        <div> 15,399 tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+         <div> Brawn Panjabi </div>
+         <div style="text-decoration: line-through;">3000tk</div>
+        <div> 2700tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Brawn Panjabi " data-name="Brawn Panjabi " data-price="2700">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
     
      </div> 
     </div>
-    <div class="cards" id="cards" style=" ">
-                                 <div> <img class="weddingImg" src="wedpic/r.avif" alt=""></div>
-        
-     <div class="details">
-         <div> Lehenga </div>
-         <div style="text-decoration: line-through;">20,000tk</div>
-        <div> 15,399 tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+  </div>
+  <br><br><br><br>
+  <h1 id="bride" style="display: flex; justify-self: center;">Women</h1>
+  <div class="CardsContainer">
     
-     </div> 
-    </div>
     <div class="cards" id="cards" style=" margin-top: 20px;">
-        <div> <img class="weddingImg" src="wedpic/q.avif" alt=""></div>
-        
-     <div class="details">
-         <div> Lehenga </div>
-         <div style="text-decoration: line-through;">20,000tk</div>
-        <div> 15,399 tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
-    
-     </div> 
-    </div>
-</div>
-<br><br><br><br>
-<h1 id="bride" style="display: flex; justify-self: center;">Women</h1>
-<div class="CardsContainer">
-    
-    <div class="cards" id="cards" style=" ">
         <div> <img class="weddingImg" src="women/1.webp" alt=""></div>
         
      <div class="details">
-         <div> Brown Printed Jamawar Theme Salwar Kameez </div>
-         <div style="text-decoration: line-through;">4,515TK</div>
-        <div> 3,900TK</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+         <div> Brawn Printed Salwar kameez </div>
+         <div style="text-decoration: line-through;">4500tk</div>
+        <div> 3700tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Brawn Printed Salwar kameez " data-name="Brawn Printed Salwar kameez " data-price="3700">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+    
+     </div> 
+    </div>
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="women/a.webp" alt=""></div>
+        
+     <div class="details">
+         <div> Maroon Mirpur Printed Katan Sharee </div>
+         <div style="text-decoration: line-through;">20,000TK</div>
+        <div> 17,900TK</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Maroon Mirpur Printed Katan Sharee " data-name=" Maroon Mirpur Printed Katan Sharee " data-price="17900">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
     
      </div> 
  </div>
@@ -149,29 +247,28 @@
      <div> Black Wax Dyed And Printed Cotton Kurta </div>
      <div style="text-decoration: line-through;">3,220tk</div>
     <div> 2,900 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Black Wax Dyed And Printed Cotton Kurta " data-name=" Black Wax Dyed And Printed Cotton Kurta" data-price="2900">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    <div> <img class="weddingImg" src="women/cc.webp" alt=""></div>
     
  <div class="details">
-     <div> Hand Embroidery Lehenga </div>
-     <div style="text-decoration: line-through;">90,000tk</div>
-    <div> 80,000tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
-
- </div> 
-</div>
-<div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
-    
- <div class="details">
-     <div> Gold Pattern Stitch </div>
-     <div style="text-decoration: line-through;">1,20,000tk</div>
-    <div> 90,000 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div> Mustard Printed And Embroided Kurta </div>
+     <div style="text-decoration: line-through;">2300tk</div>
+    <div> 2,000tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Mustard Printed And Embroided Kurta" data-name=" Mustard Printed And Embroided Kurta" data-price="2000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
 
  </div> 
 </div>
@@ -179,15 +276,91 @@
 <br><br><br><br>
 <h1 id="bride" style="display: flex; justify-self: center;">Kids</h1>
 <div class="CardsContainer">
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/3/0300000028698.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
+    
+ <div class="details">
+     <div>Pink/Purple Printed Fatua </div>
+     <div style="text-decoration: line-through;">525tk</div>
+    <div> 400tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Pink/Purple Printed Fatua" data-name=" Pink/Purple Printed Fatua" data-price="400">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/3/0310000025630.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+        
+     <div class="details">
+         <div>Green Printed T-shirt</div>
+         <div style="text-decoration: line-through;">345tk</div>
+        <div> 300tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Green Printed T-shirt" data-name="Green Printed T-shirt" data-price="300">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/3/0380000195647.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=" alt=""></div>
+    
+ <div class="details">
+     <div> Black/white Printed frock </div>
+     <div style="text-decoration: line-through;">500tk</div>
+    <div> 400tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="  Black/white Printed frock" data-name="  Black/white Printed frock" data-price="400">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/3/0380000188113.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
+    
+ <div class="details">
+     <div> Green Printed Salwar kameez </div>
+     <div style="text-decoration: line-through;">600tk</div>
+    <div> 500tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="  Green Printed Salwar kameez" data-name="  Green Printed Salwar kameez" data-price="500">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+
+</div>
+<br><br><br><br>
+
+<h1 id="bride" style="display: flex; justify-self: center;">Wedding</h1>
+<div class="CardsContainer">
     
     <div class="cards" id="cards" style=" ">
         <div> <img class="weddingImg" src="wedpic/1.avif" alt=""></div>
         
      <div class="details">
-         <div> Lehenga </div>
+         <div> White gold moslin veil </div>
          <div style="text-decoration: line-through;">20,000tk</div>
         <div> 15,399 tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" White gold moslin veil" data-name=" White gold moslin veil" data-price="15399">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
     
      </div> 
  </div>
@@ -195,32 +368,49 @@
     <div> <img class="weddingImg" src="wedpic/2.avif" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
+     <div>Red Rose Bridal </div>
      <div style="text-decoration: line-through;">20,000tk</div>
     <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Red Rose Bridal " data-name="Red Rose Bridal " data-price="15399">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    <div> <img class="weddingImg" src="wedpic/t.avif" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
-     <div style="text-decoration: line-through;">20,000tk</div>
-    <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div> Hand Embroided Gold </div>
+     <div style="text-decoration: line-through;">30,000tk</div>
+    <div> 25,000tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="  Hand Embroided Gold " data-name=" Hand Embroided Gold " data-price="25000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
+    <div> <img class="weddingImg" src="wedpic/c.avif" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
-     <div style="text-decoration: line-through;">20,000tk</div>
-    <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div> White Dulha</div>
+     <div style="text-decoration: line-through;">40,000tk</div>
+    <div> 35,399 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="White Dulha " data-name="White Dulha " data-price="35399">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
 
  </div> 
 </div>
@@ -231,51 +421,210 @@
 <div class="CardsContainer">
     
     <div class="cards" id="cards" style=" ">
-        <div> <img class="weddingImg" src="wedpic/1.avif" alt=""></div>
+        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0872210099979.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
         
      <div class="details">
-         <div> Lehenga </div>
-         <div style="text-decoration: line-through;">20,000tk</div>
-        <div> 15,399 tk</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+         <div> Grey Embroided Leather Purse </div>
+         <div style="text-decoration: line-through;">950tk</div>
+        <div> 799 tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Grey Embroided Leather Purse " data-name="Grey Embroided Leather Purse " data-price="799">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
     
      </div> 
  </div>
  <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/2.avif" alt=""></div>
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832418399818.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
-     <div style="text-decoration: line-through;">20,000tk</div>
-    <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Stone Oxidized Silver Ring </div>
+     <div style="text-decoration: line-through;">250tk</div>
+    <div> 200tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Stone Oxidized Silver Ring  " data-name="Stone Oxidized Silver Ring  " data-price="200">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/3.avif" alt=""></div>
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832410045461.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
-     <div style="text-decoration: line-through;">20,000tk</div>
-    <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div> Silver Bracelet </div>
+     <div style="text-decoration: line-through;">2678tk</div>
+    <div> 2000tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="  Silver Bracelet  " data-name=" Silver Bracelet  " data-price="2000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="wedpic/4.avif" alt=""></div>
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000092173.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" alt=""></div>
     
  <div class="details">
-     <div> Lehenga </div>
-     <div style="text-decoration: line-through;">20,000tk</div>
-    <div> 15,399 tk</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Orange Leather Wallet </div>
+     <div style="text-decoration: line-through;">150tk</div>
+    <div> 100tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Orange Leather Wallet " data-name="Orange Leather Wallet " data-price="100">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
 
  </div> 
 </div>
 </div>
-<br><br><br><br><br>
+<br><br><br><br>
+<h1 id="bride" style="display: flex; justify-self: center;">Shoes</h1>
+  <div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" margin-top: 20px;">
+        <div> <img class="weddingImg" src="https://storage.apex4u.com/09b66f75-66f1-46a9-bc04-3e6f046cd30e.jpg" alt=""></div>
+        
+     <div class="details">
+         <div> Men's Mule Sandal  </div>
+         <div style="text-decoration: line-through;">1050tk</div>
+        <div> 1000tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" Men's Mule Sandal  " data-name="Men's Mule Sandal  " data-price="1000">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+     </div>
+    </div> 
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://storage.apex4u.com/5defe87c-ad44-476d-a9d4-eaf2986bb47f.jpg" alt=""></div>
+        
+   <div class="details">
+         <div> Rossi Woman Sandal </div>
+         <div style="text-decoration: line-through;">1400TK</div>
+        <div> 1000TK</div>
+        <button class="cart-button" id="dress" data-value="0" data-id="Rossi Woman Sandal " data-name=" Rossi Woman Sandal" data-price="1000">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://storage.apex4u.com/39a93889-5907-43dd-b4bb-4e38974cf65f.jpg" alt=""></div>
+    
+ <div class="details">
+     <div>Men's Sandal </div>
+     <div style="text-decoration: line-through;">780tk</div>
+    <div> 700 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Men's Sandal  " data-name="Men's Sandal " data-price="700">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://storage.apex4u.com/71518A11_2_nw.jpeg" alt=""></div>
+    
+ <div class="details">
+     <div> Black High Heel Sandal </div>
+     <div style="text-decoration: line-through;">3250tk</div>
+    <div> 3000tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Black High Heel Sandal" data-name=" Black High Heel Sandal" data-price="3000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+</div>
+<br><br><br><br>
+<h1 id="bride" style="display: flex; justify-self: center;">Bag</h1>
+<div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000099003_3.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=667&width=500&canvas=500:667" alt=""></div>
+        
+     <div class="details">
+         <div> Black zardosi Work bag </div>
+         <div style="text-decoration: line-through;">3456tk</div>
+        <div> 3000tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id=" White gold moslin veil" data-name=" White gold moslin veil" data-price="3000">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000107460.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=667&width=500&canvas=500:667" alt=""></div>
+    
+ <div class="details">
+     <div>Grey Embroidary Work Bag </div>
+     <div style="text-decoration: line-through;">1980tk</div>
+    <div> 1500tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id=" Grey Embroidary Work Bag " data-name="Grey Embroidary Work Bag " data-price="1500">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000106709.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=667&width=500&canvas=500:667" alt=""></div>
+    
+ <div class="details">
+     <div> Beige Embroidered Leather Bag</div>
+     <div style="text-decoration: line-through;">3250tk</div>
+    <div> 3000tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="  Beige Embroidered Leather Bag " data-name=" Beige Embroidered Leather Bag " data-price="2000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000106708.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=667&width=500&canvas=500:667" alt=""></div>
+    
+ <div class="details">
+     <div> Black-Genuine-Leather-Bag</div>
+     <div style="text-decoration: line-through;">2560tk</div>
+    <div> 2000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Black-Genuine-Leather-Bag " data-name="Black-Genuine-Leather-Bag " data-price="2000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+ </div> 
+</div>
+</div>
+<br><br><br><br>
    <!-- FOOTER -->
 <div class="subscribe">
     <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
@@ -325,7 +674,7 @@
 <div class="credits"><p >© RENABELLE - ALL RIGHTS RESERVED - P. IVA 00900421009 LICENZA SIAE N. 3566/I/1417 - Renabelle Fashion Official Online Store</p></div>
 </div>
 
-
+<script src="java.js"></script>
    
 </body>
 </html>

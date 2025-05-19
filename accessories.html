@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Renabelle Accessories</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
     <link rel="stylesheet" href="frontPage.css">
     <link rel="stylesheet1" href="men.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
    <!-- CATEGORY JS-->
    <script>
     function navigate() {
@@ -39,26 +42,63 @@
   <body>
 
     <div class="header">
-        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
-       
-        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
-    </div><hr>
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
 
 <!--MENU-->
     <div class="menu" id="menu" style="color: #ffffff;" >
         
-        <div class="menus" style="">
-             <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
-            <div class="dropdown">
-        <button class="dropdown-btn">Categories</button>
-        <div class="dropdown-content">
-            <a href="women.html">Women</a>
-            <a href="men1.html">Men</a>
-            <a href="kids.html">Kids</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="wedding.html">Wedding</a>
-        </div>
-    </div>|
+<div class="menus" style="">
+           <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a  >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a >Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
         <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
           <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
            <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
@@ -66,6 +106,34 @@
          </div>
     </div>
 
+        <div class="addtocartpopup" >
+    <div id="closePopup" class="closePopup" style="cursor: pointer; "><i class="fa fa-times"></i></div>
+<div style="justify-items: baseline;"><br>
+  <div><label for="size">Size: 
+  <select style="height: 30px;" name="size" id="size" >
+    <option class="option" value="Small" data-size="Small">S</option>
+    <option class="option" value="Medium" data-size="Medium">M</option>
+    <option class="option" value="Large" data-size="Large">L</option>
+    <option class="option" value="Extra-large" data-size="Extra-Large">XL</option>
+  </select>
+</label></div>
+<div>
+  
+<form action="Quantity">
+  <label for="quantity" style="justify-self: center;">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" data-Quantity="value" >
+</form>
+</div>
+<div>
+</div>
+  </div><br>
+ <button class="addedToCartButton" id="">
+  <span class="add-to-cart">Add to cart</span>
+
+</button>
+
+
+</div>
     <div class="whole-wedding-page">
 <div style="position: absolute; ">    
     
@@ -80,163 +148,245 @@
 <div class="CardsContainer">
     
     <div class="cards" id="cards" style=" ">
-        <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0872210099979.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+        <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/s/t/stone-studded-earrings-v1-jqt684.jpg">
             </div>
         
      <div class="details">
-         <div>Grey Erri Embroided Leather Purse </div>
-        <div> Price: 950.00TK</div>
-        <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+         <div>Stone Studded Earrings </div>
+        <div> Price: 350.00TK</div>
+        <div> <button class="cart-button" id="dress" data-value="0" data-id="Stone Studded Earrings" data-name="Stone Studded Earrings" data-price="350">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
     
      </div> 
  </div>
  <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000107780.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" ></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/o/x/oxidised-earrings-v1-jpm7393.jpg" ></div>
     
  <div class="details">
-     <div> Red Embroided Chosa Purse </div>
-    <div> Price: 1000.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Oxidised Earrings </div>
+    <div> Price: 400.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Oxidised Earrings" data-name="Oxidised Earrings" data-price="400">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000107779.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/o/x/oxidised-peacock-style-earrings-v1-jqt819.jpg"></div>
     
  <div class="details">
-     <div>Beige Embroided Chosa Purse </div>
-    <div> Price: 1200.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Oxidised Peacock style Earrings </div>
+    <div> Price: 450.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Oxidised Peacock style Earrings" data-name="Oxidised Peacock style Earrings" data-price="450">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000104928_4.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2" ></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/k/u/kundan-earrings-v1-jhu4904.jpg" ></div>
     
  <div class="details">
-     <div>Ash Velvat Bag</div>
-    <div> Price: 780.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Kundan Earrings</div>
+    <div> Price: 500.00TK</div>
+    <div><button class="cart-button" id="dress" data-value="0" data-id="Kundan Earrings" data-name="Kundan Earrings" data-price="500">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/1/0/1050000007944.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/g/o/golden-polished-adjustable-bracelet-v1-jqt617.jpg"></div>
  <div class="details">
-     <div>Stone Brase Ring </div>
-    <div> Price: 200.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Golden Polished Bracelet </div>
+    <div> Price:300.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Golden Polished Bracelet" data-name="Golden Polished Bracelet" data-price="300">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
+
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0830000046215.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/a/m/american-diamond-studded-openable-bracelet-v1-jqt133.jpg"></div>
     
  <div class="details">
-     <div>Stone Oxidized Silver Ring </div>
-    <div> Price: 250.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>American Diamond Bracelet</div>
+    <div> Price: 275.00TK</div>
+    <div><button class="cart-button" id="dress" data-value="0" data-id="American Diamond Studded Bracelet" data-name="American Diamond Studded Bracelet" data-price="1475">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832418399818.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
-    
- <div class="details">
-     <div> Stone Oxidized ilver Ring</div>
-    <div> Price: 475.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
-
- </div> 
-</div>
-<div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832418399623.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/k/u/kundan-openable-bracelet-v1-jhu5117.jpg">
         </div>
     
  <div class="details">
-     <div> Simulated American Diamond Silver Ring</div>
-    <div> Price: 456.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Kundan Design Bracelet</div>
+    <div> Price:360.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Kundan Design Bracelet" data-name="Kundan Design Bracelet" data-price="360">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
+
+ </div> 
+</div>
+
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/k/u/kundan-openable-bracelet-v1-jhu5122.jpg"></div>
+    
+ <div class="details">
+     <div>Kundan Openable Bracelet </div>
+    <div> Price: 490.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Kundan Openable Bracelet " data-name="Kundan Openable Bracelet " data-price="490">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832410045461.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/p/a/pacchikari-adjustable-ring-v1-jqt723.jpg"></div>
     
  <div class="details">
-     <div> Pearl And Simulated Oxidized Silver Bracelet </div>
-    <div> Price: 2690.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Pacchikari Adjustable Ring</div>
+    <div> Price-200.00k</div>
+    <div><button class="cart-button" id="dress" data-value="0" data-id="Pacchikari Adjustable Ring" data-name="Pacchikari Adjustable Ring" data-price="200">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832010041784.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/o/x/oxidised-bird-style-stone-studded-adjustable-ring-v1-jjb106.jpg"></div>
     
  <div class="details">
-     <div> Simulated Oxidized Ruby Silver Bangle </div>
-    <div> Price- 3780.00k</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Bird Style Ring</div>
+    <div> Price: 308.00TK</div>
+    <div><button class="cart-button" id="dress" data-value="0" data-id="Bird Style Ring" data-name="Bird Style Ring" data-price="308">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832418399497.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/s/t/stone-studded-adjustable-ring-v1-jjb104.jpg"></div>
     
  <div class="details">
-     <div>Engraved Silver Bangle </div>
-    <div> Price: 1548.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Stone Studded Ring </div>
+    <div> Price: 200.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Stone Studded Ring " data-name="Stone Studded Ring " data-price="200">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0832118302451.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/a/m/american-diamond-studded-adjustable-ring-v1-jqt724.jpg"></div>
     
  <div class="details">
-     <div>Mina Detailed Oxidized Silver Bangle  </div>
-    <div> Price: 1677.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
-
- </div> 
-</div>
-<div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000092173.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
-    
- <div class="details">
-     <div>Rush Orange Leather Wallet</div>
+     <div>American Diamond Ring</div>
     <div> Price: 260TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+    <div><button class="cart-button" id="dress" data-value="0" data-id="American Diamond Ring" data-name="American Diamond Ring" data-price="260">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0872120090930_3.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/s/t/stone-studded-necklace-set-v1-jke867.jpg"></div>
     
  <div class="details">
-     <div> Black Leather Wallet </div>
-    <div> Price: 168.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Stone Studded Necklace Set </div>
+    <div> Price: 1068.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Stone Studded Necklace Set " data-name="Stone Studded Necklace Set " data-price="1068">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000095825_4.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/k/u/kundan-choker-necklace-set-v1-jvd1738.jpg"></div>
     
  <div class="details">
-     <div>Genuine Leather Women Wallet  </div>
-    <div> Price: 300.00TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Kundan Necklace Set </div>
+    <div> Price:900.00TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Kundan Necklace Set" data-name="Kundan Necklace Set" data-price="900">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button> </div>
 
  </div> 
 </div>
 <div class="cards" id="cards" style=" ">
-    <div> <img class="weddingImg" src="https://www.aarong.com/media/catalog/product/0/8/0870000095364.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400&dpr=2"></div>
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/p/e/pearl-layered-necklace-set-v1-jvd1953.jpg"></div>
     
  <div class="details">
-     <div> Brown Embossed Genuine Leather Wallet</div>
-    <div> Price: 330TK</div>
-    <div> <button class="addToCart_button" id="addToCart_button"> Add to cart</button> </div>
+     <div>Pearl Necklace Set</div>
+    <div> Price:1030TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Pearl Necklace Set" data-name="Pearl Necklace Set" data-price="1030">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
+
+  </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/s/t/stone-studded-oxidised-necklace-set-v1-juy931_3.jpg"></div>
+    
+ <div class="details">
+     <div>Oxidised Necklace Set</div>
+    <div> Price:1030TK</div>
+    <div> <button class="cart-button" id="dress" data-value="0" data-id="Oxidised Necklace Set" data-name="Oxidised Necklace Set" data-price="1030">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button></div>
 
  
  </div> 
@@ -294,7 +444,7 @@
 <div class="credits"><p >© RENABELLE - ALL RIGHTS RESERVED - P. IVA 00900421009 LICENZA SIAE N. 3566/I/1417 - Renabelle Fashion Official Online Store</p></div>
 </div>
 
-
+<script src="java.js"></script>
    
 </body>
 </html>

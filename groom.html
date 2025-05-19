@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renabelle Groom</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
+    <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet1" href="men.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!-- CATEGORY JS-->
+   <script>
+    function navigate() {
+      var select = document.getElementById('category');
+      var url = select.options[select.selectedIndex].value;
+      window.location.href = url;
+    }
+  </script>
+      <script>
+        window.onscroll = function()
+        {
+          var menu = document.getElementById("menu");
+          if (window.scrollY > 0)
+        {
+          menu.style.position = "sticky";
+          menu.style.top = "0px";
+          menu.style.opacity = ".9";
+          menu.style.height = "6%";
+          menu.style.zIndex="3";
+        }
+        else
+        {menu.style.position = "static";
+          menu.style.opacity = "1";
+        }
+        }
+      </script>
+  </head> <!--header-->
+  <body>
+
+    <div class="header">
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
+
+<!--MENU-->
+    <div class="menu" id="menu" style="color: #ffffff;" >
+        
+<div class="menus" style="">
+           <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a >Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
+        <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
+          <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
+           <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
+          <button class="button" type="button" onclick="window.location.href='myCart.html'"><p style="color: #ffffff;">MY CART</p></button>
+         </div>
+    </div>
+
+        <div class="addtocartpopup" >
+    <div id="closePopup" class="closePopup" style="cursor: pointer; "><i class="fa fa-times"></i></div>
+<div style="justify-items: baseline;"><br>
+  <div><label for="size">Size: 
+  <select style="height: 30px;" name="size" id="size" >
+    <option class="option" value="Small" data-size="Small">S</option>
+    <option class="option" value="Medium" data-size="Medium">M</option>
+    <option class="option" value="Large" data-size="Large">L</option>
+    <option class="option" value="Extra-large" data-size="Extra-Large">XL</option>
+  </select>
+</label></div>
+<div>
+  
+<form action="Quantity">
+  <label for="quantity" style="justify-self: center;">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" data-Quantity="value" >
+</form>
+</div>
+<div>
+</div>
+  </div><br>
+ <button class="addedToCartButton" id="">
+  <span class="add-to-cart">Add to cart</span>
+
+</button>
+
+
+</div>
+    <div class="whole-wedding-page">
+<div style="position: absolute; ">    
+    
+    
+
+   
+    
+    
+</div>
+
+<h1 id="men" style="display: flex; justify-self: center;">Groom</h1>
+<div class="CardsContainer" >
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="wedpic/t.avif" alt=""></div>
+        
+     <div class="details">
+         <div> Hand Embroidered Gold </div>
+        <div> 67,000 tk</div>
+        <button class="cart-button" id="dress" data-value="0" data-id="Peach-Printed-And-Linen-Pant-Top-Set" data-name="Peach-Printed-And-Linen-Pant-Top-Set" data-price="1220">
+            <span class="add-to-cart">Add to cart</span>
+            <span class="added">Added</span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+      
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/b.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Ivory Embroidered Silk </div>
+    <div> 58,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Ivory-Embroidered-Silk" data-name="Ivory-Embroidered-Silk" data-price="1220">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/c.avif" alt=""></div>
+    
+ <div class="details">
+     <div> White Dulha </div>
+    <div> 55,500 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="White-Dulha" data-name="White-Dulha" data-price="1220">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/d.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Gold Embroidered Coture </div>
+    <div> 88,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Gold-Embroidered-Coture" data-name="Gold-Embroidered-Coture" data-price="1220">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/e.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Dolch of Gabanna </div>
+    <div> 86,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Dolch-of-Gabanna" data-name="Dolch-of-Gabanna" data-price="1220">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/f.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Raja Rajesh </div>
+    <div> 65,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Raja-Rajesh" data-name="Raja-Rajesh" data-price="1220">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/g.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Flower Embroidered </div>
+    <div> 1,00,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Flower-Embroidered" data-name="Flower-Embroidered" data-price="100000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/s.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Dhuti Gold </div>
+    <div> 70,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Dhuti-Gold" data-name="Dhuti-Gold " data-price="70000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/i.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Haute Couture Maroon Mania </div>
+    <div> 77,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Haute-Couture-Maroon-Mania" data-name="Haute-Couture-Maroon-Mania" data-price="77000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/j.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Haute Couture Rolland </div>
+    <div> 87,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Haute-Couture-Rolland" data-name="Haute-Couture-Rolland" data-price="87000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/k.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Ranjit Rahul </div>
+    <div> 66,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Ranjit-Rahul" data-name="Ranjit-Rahul" data-price="66000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/l.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Embroidery Artisan </div>
+    <div> 95,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Embroidery-Artisan" data-name="Embroidery-Artisan" data-price="95000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/m.avif" alt=""></div>
+    
+ <div class="details">
+     <div> White Sheath </div>
+    <div> 75,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="White-Sheath" data-name="White-Sheath" data-price="75000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/p.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Gold Thread Embroidery Dustin </div>
+    <div> 1,40,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Gold-Thread-Embroidery-Dustin" data-name="Gold-Thread-Embroidery-Dustin" data-price="140000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/q.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Gold Thread Ori </div>
+    <div> 1,30,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Gold-Thread-Ori" data-name="Gold-Thread-Ori" data-price="130000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/r.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Manish </div>
+    <div> 96,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Manish " data-name="Manish " data-price="96000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="wedpic/x.avif" alt=""></div>
+    
+ <div class="details">
+     <div> Ganwal Gariz </div>
+    <div> 87,000 tk</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Ganwal-Gariz" data-name="Ganwal-Gariz" data-price="87000">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+  
+
+ </div> 
+</div>
+
+
+</div>
+ <!-- FOOTER -->
+ <div class="subscribe">
+    <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
+    <div><input type="email" placeholder="Enter email..." style="width: 300px; height: 35px; margin-left: 40px;"></div>
+    
+</div>
+<div class="footerbox" style="">
+  <div class="footer" >
+    
+    <div>
+      <ul type="none";>
+        <li class="list-header">CLIENT SERVICES</li>
+        <li><a href="contactUs.html" class="footer-list">Contact Us</a></li>
+        <li><a href="appointment.html" class="footer-list">Book an Appointment</a></li>
+        <li><a href="services.html" class="footer-list">Our Services</a></li>
+        <li><a href="faq.html" class="footer-list">FAQs</a></li>
+        
+      </ul>
+    </div>
+    <div>
+      <ul type="none">
+        <li class="list-header">LEGAL & PRIVACY</li>
+        <li><a href="privacy.html" class="footer-list">Privacy Policy</a></li>
+        <li><a href="cookie.html" class="footer-list">Cookie Policy</a></li>
+        <li><a href="terms.html" class="footer-list">Website terms of use</a></li>
+        <li><a href="code.html" class="footer-list">Code of conduct</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul type="none">
+      <li class="list-header">CORPORATE</li>
+      <li><a href="aboutUs.html" class="footer-list">About Us</a></li>
+      <li><a href="locations.html" class="footer-list">Store Locations</a></li>
+      <li><a href="career.html" class="footer-list">Career with us</a></li>
+    </ul>
+    </div>
+
+  </div>
+  <div style="justify-self: end;">
+    <a href="https://www.facebook.com/BRAC.AARONG/"><img class="footer-sns" src="pic/fblogo.png" alt="" style=""></a>
+    <a href="https://www.instagram.com/brac.aarong/"><img class="footer-sns" src="pic/iglogo.webp" alt="" style="" ></a>
+    <a href="https://www.youtube.com/myaarongrewards"><img class="footer-sns" src="pic/ytlogo.webp" alt="" style="" ></a>
+    
+    </div>
+</div>
+<hr>
+<div class="credits"><p >© RENABELLE - ALL RIGHTS RESERVED - P. IVA 00900421009 LICENZA SIAE N. 3566/I/1417 - Renabelle Fashion Official Online Store</p></div>
+</div>
+
+<script src="java.js"></script>
+   
+</body>
+</html>

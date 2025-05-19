@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Cart</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
     <link rel="stylesheet" href="frontPage.css">
     <link rel="stylesheet1" href="men.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
    <!-- CATEGORY JS-->
+   <style>
+    body{
+      font-size: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-display: bold;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    td{
+      padding: 5px; 
+      font-size:  16px; 
+      width: 15%;
+      height: 50px; 
+      margin-right: 10px; 
+      justify-content: left;
+    }
+   </style>
+   
+   
+    <!-- CATEGORY JS-->
    <script>
     function navigate() {
       var select = document.getElementById('category');
@@ -39,26 +64,63 @@
   <body>
 
     <div class="header">
-        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
-       
-        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
-    </div><hr>
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
 
 <!--MENU-->
     <div class="menu" id="menu" style="color: #ffffff;" >
         
 <div class="menus" style="">
            <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
-            <div class="dropdown">
-        <button class="dropdown-btn">Categories</button>
-        <div class="dropdown-content">
-            <a href="women.html">Women</a>
-            <a href="men1.html">Men</a>
-            <a href="kids.html">Kids</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="wedding.html">Wedding</a>
-        </div>
-    </div>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a 1">Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
         <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
           <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
            <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
@@ -66,13 +128,82 @@
          </div>
     </div>
 
-    
-    
-    <div><img src="pic/cart.jpg" alt="" style="display: flex; align-self: center; justify-self: center; padding-top: 12%;"></div>
-    <div><p style="display: flex; justify-self: center; font-family: Arial, Helvetica, sans-serif;">Your cart is empty!</p></div>
-    <div><a href="frontPage.html"><p style="display: flex; justify-self: center; padding-bottom: 19%; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Continue shopping?</p></a></div>
 
-   <!-- FOOTER -->
+    <div style="margin: 3%; font-size: 20px; ">
+      <h1>Your Cart</h1>
+<div id="cart-items"></div>
+
+<script>
+  
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  
+  const cartItemsContainer = document.getElementById("cart-items");
+  if (cart.length === 0) {
+    cartItemsContainer.textContent = "Your cart is empty.";
+  } else {
+    cart.forEach((item, index) => {
+      const itemDiv = document.createElement("div");
+      itemDiv.style.marginBottom = "10px";
+
+      
+      itemDiv.innerHTML = `
+        <table>
+
+          <tr>
+            <td><img src="${item.image}" alt="${item.name}"></td>
+            <!--<td>ID: ${item.id}</td>-->
+            <td style="width:20%;">Name: ${item.name}</td>
+            <td>Size: ${item.size}</td>
+            <td>Quantity: ${item.quantity}</td>
+            <td>Price Per Item: ${item.price}</td>
+            <td>Total Price: ${( item.price * item.quantity)}</td>
+            <td><button class="remove-button" data-index="${index}" >Remove</button></td>
+          </tr>
+        </table>
+        
+      `;
+
+      cartItemsContainer.appendChild(itemDiv);
+    });
+  }
+
+  // event listeners to "Remove" buttons
+  cartItemsContainer.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-button")) {
+      const index = event.target.getAttribute("data-index");
+      removeFromCart(index);
+      //decrease cart count
+      const cartCount = document.querySelector(".cart-count");
+      if (cartCount) {
+        cartCount.textContent = parseInt(cartCount.textContent) - 1;
+      }
+
+    }
+  });
+
+
+  
+
+  // remove item
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart)); 
+    location.reload(); 
+  }
+
+
+</script>
+<P><br><br>
+  <button onclick="alert('Please log in to continue, Thank You!'); window.location.href='login.html';" class="cart-button" style="display: flex; justify-content: center; justify-self: center; left: -20px;"> Proceed Payment</button>
+</P>
+
+    
+<p><br><br><br><br><br><br><br><br><br><br><br></br><br><br><br><br><br><br><br><br><br><br></br></p>
+  
+    </div>
+
+ <!-- FOOTER -->
 <div class="subscribe">
     <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
     <div><input type="email" placeholder="Enter email..." style="width: 300px; height: 35px; margin-left: 40px;"></div>

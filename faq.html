@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frequently Asked</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
     <link rel="stylesheet" href="frontPage.css">
     <link rel="stylesheet1" href="men.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
@@ -39,26 +40,63 @@
   <body>
 
     <div class="header">
-        <img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
-       
-        <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
-    </div><hr>
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
 
 <!--MENU-->
     <div class="menu" id="menu" style="color: #ffffff;" >
         
 <div class="menus" style="">
            <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
-            <div class="dropdown">
-        <button class="dropdown-btn">Categories</button>
-        <div class="dropdown-content">
-            <a href="women.html">Women</a>
-            <a href="men1.html">Men</a>
-            <a href="kids.html">Kids</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="wedding.html">Wedding</a>
-        </div>
-    </div>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a >Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
         <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
           <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
            <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|

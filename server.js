@@ -1,28 +1,41 @@
-const express = require("express");
-const SSI = require("ssi");
-const path = require("path");
+document.addEventListener("DOMContentLoaded", function () {
+  const addToCartButtons = document.querySelectorAll(".addToCart_button");
 
-const app = express();
-const port = 5500;
-const baseDir = path.join(__dirname);
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const itemDetails = this.parentElement;
+      const itemName = itemDetails.querySelector("div:first-child").innerText;
+      const itemPrice = itemDetails.querySelector("div:nth-child(2)").innerText;
 
-const ssi = new SSI({
-  baseDir: baseDir,
-  ext: ".html",
-});
+      addToCart(itemName, itemPrice);
+    });
+  });
 
-app.use((req, res, next) => {
-  const filePath = path.join(baseDir, req.path);
-  if (filePath.endsWith(".html")) {
-    const content = ssi.compileFile(filePath).contents;
-    res.send(content);
-  } else {
-    next();
+  function addToCart(itemName, itemPrice) {
+    // Add the item to the cart (this is a placeholder, you can implement your own cart logic)
+    console.log(`Added to cart: ${itemName} - ${itemPrice}`);
+
+    // Provide feedback to the user
+    alert(`${itemName} has been added to your cart.`);
   }
 });
+        <script>document.addEventListener("DOMContentLoaded", function () {
+  const addToCartButtons = document.querySelectorAll(".addToCart_button");
 
-app.use(express.static(baseDir));
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const itemDetails = this.parentElement;
+      const itemName = itemDetails.querySelector("div:first-child").innerText;
+      const itemPrice = itemDetails.querySelector("div:nth-child(2)").innerText;
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+      addToCart(itemName, itemPrice);
+    });
+  });
+
+  function addToCart(itemName, itemPrice) {
+    // Add the item to the cart (this is a placeholder, you can implement your own cart logic)
+    console.log(`Added to cart: ${itemName} - ${itemPrice}`);
+
+    // Provide feedback to the user
+    alert(`${itemName} has been added to your cart.`);
+  }

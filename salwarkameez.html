@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salwar Kameez</title>
+    <link rel="icon" type="image/png/jpeg" href="pic/R.jpg">
+    <link rel="stylesheet" href="frontPage.css">
+    <link rel="stylesheet1" href="men.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet2">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet3">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- CATEGORY JS-->
+   <script>
+    function navigate() {
+      var select = document.getElementById('category');
+      var url = select.options[select.selectedIndex].value;
+      window.location.href = url;
+    }
+  </script>
+      <script>
+        window.onscroll = function()
+        {
+          var menu = document.getElementById("menu");
+          if (window.scrollY > 0)
+        {
+          menu.style.position = "sticky";
+          menu.style.top = "0px";
+          menu.style.opacity = ".9";
+          menu.style.height = "6%";
+          menu.style.zIndex="3";
+        }
+        else
+        {menu.style.position = "static";
+          menu.style.opacity = "1";
+        }
+        }
+      </script>
+  </head> <!--header-->
+  <body>
+
+    <div class="header">
+      <div><img src="pic/logo2.jpeg" alt="logo" style="height:40px;padding-top: 5px;">
+      </div>
+      <div style="align-items: center; display: flex;">
+        <div style="align-items: center; display: flex;">
+          <div>            <input class="search-container" type="search" class="search-box" placeholder="Search..." style="border-radius: 20px; height: 30px; width: 200px;" >
+          </div>
+          <div style="border: none;">
+            <div style="color: rgb(99, 0, 0); padding-left: 20px; padding-top: 5px; text-decoration: solid; font-size: 16px;" class="cart-count" id="cart-count"></div>
+
+            <i class="fas fa-shopping-cart" style="height: 26px;" onclick="window.location.href='myCart.html'"></i> 
+
+            
+          </div>
+          <!-- show cart count-->
+        </div>
+         </div></div>
+  </div><hr>
+
+<!--MENU-->
+    <div class="menu" id="menu" style="color: #ffffff;" >
+        
+<div class="menus" style="">
+           <button class="button" type="button" onclick="window.location.href='frontPage.html'"><p style="color: #ffffff;">HOME</p></button>|
+           <div class="dropdown">
+            <button class="dropdown-btn">CATEGORIES</button>|
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a >Women</a>
+                    <div class="submenu-content">
+                        <a href="onepiece.html">One Piece</a>
+                        <a href="salwarkameez.html">Salwar kameez</a>
+                        <a href="saree.html">Saree</a>
+                    
+                    </div>
+                </div>
+                <a href="men1.html">Men</a>
+                <div class="submenu">
+                <a >Kids</a>
+                <div class="submenu-content">
+                        <a href="babyboy.html">Baby boy</a>
+                        <a href="babygirl.html">Baby girl</a>
+                    
+                    </div>
+                </div>
+                <a href="accessories.html">Accessories</a>
+                <div class="submenu">
+                <a >Wedding</a>
+                <div class="submenu-content">
+                  <a href="Groom.html">Groom</a>
+                  <a href="Bride.html">Bride</a>
+              
+              </div>
+          </div>
+                <a href="shoes.html">Shoes</a>
+                <a href="bag.html">Bag</a>
+            </div>
+           </div>
+        <button class="button" type="button"><p style="color: #ffffff;" onclick="window.location.href='sale.html'">SALE</p></button>|
+          <button class="button" type="button" onclick="window.location.href='aboutUs.html'" ><p style="color: #ffffff;">ABOUT US</p></button>|
+           <button class="button" type="button" onclick="window.location.href='login.html'"><p style="color: #ffffff;">LOGIN</p></button>|
+          <button class="button" type="button" onclick="window.location.href='myCart.html'"><p style="color: #ffffff;">MY CART</p></button>
+         </div>
+    </div>
+
+        <div class="addtocartpopup" >
+    <div id="closePopup" class="closePopup" style="cursor: pointer; "><i class="fa fa-times"></i></div>
+<div style="justify-items: baseline;"><br>
+  <div><label for="size">Size: 
+  <select style="height: 30px;" name="size" id="size" >
+    <option class="option" value="Small" data-size="Small">S</option>
+    <option class="option" value="Medium" data-size="Medium">M</option>
+    <option class="option" value="Large" data-size="Large">L</option>
+    <option class="option" value="Extra-large" data-size="Extra-Large">XL</option>
+  </select>
+</label></div>
+<div>
+  
+<form action="Quantity">
+  <label for="quantity" style="justify-self: center;">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" data-Quantity="value" >
+</form>
+</div>
+<div>
+</div>
+  </div><br>
+ <button class="addedToCartButton" id="">
+  <span class="add-to-cart">Add to cart</span>
+
+</button>
+
+
+</div>
+    <div class="whole-wedding-page">
+<div style="position: absolute; ">    
+    
+    
+
+   
+    
+    
+</div>
+
+<h1 id="men" style="display: flex; justify-self: center;">Salwar kameez</h1>
+<div class="CardsContainer">
+    
+    <div class="cards" id="cards" style=" ">
+        <div> <img class="weddingImg" src="https://www.jotey.com.bd/cdn/shop/files/MTB06710_360x.jpg?v=1729403879">
+            </div>
+        
+     <div class="details">
+         <div>Light Pink Printed Anarkali-suit </div>
+        <div> Price: 9550.00TK</div>
+        <button class="cart-button" id="dress" data-value="0" data-id="Light-Pink-Printed-Anarkali-suit" data-name="Light-Pink-Printed-Anarkali-suit" data-price="9550">
+          <span class="add-to-cart">Add to cart</span>
+          <span class="added">Added</span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+    
+    
+     </div> 
+ </div>
+ <div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/800x1200/a12781a7f2ccb3d663f7fd01e1bd2e4e/l/i/light-yellow-zari-embroidered-anarkali-suit-lstv111233-1.jpg" ></div>
+    
+ <div class="details">
+     <div>Yellow-Zari anarkali suit </div>
+    <div> Price: 9525.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Yellow-Zari-Anarkali-suit" data-name="Yellow-Zari-Anarkali-suit" data-price="9525">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/800x1200/a12781a7f2ccb3d663f7fd01e1bd2e4e/g/r/greenish-grey-net-embroidered-anarkali-suit-lstv110809-1.jpg"></div>
+    
+ <div class="details">
+     <div>Greenish-Grey Anarkali-Suit</div>
+    <div> Price: 8200.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Greenish-Grey-Anarkali-Suit" data-name="Greenish-Grey-Anarkali-Suit" data-price="8200">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/800x1200/a12781a7f2ccb3d663f7fd01e1bd2e4e/n/a/navy-blue-zari-embroidered-festival-wear-net-anarkali-suit-lstv127525-1.jpg" ></div>
+    
+ <div class="details">
+     <div>Navy Blue Printed Ground </div>
+    <div> Price: 8780.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Navy-Blue-Printed-Ground " data-name="Navy-Blue-Printed-Ground " data-price="8780">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/500x750/a12781a7f2ccb3d663f7fd01e1bd2e4e/m/u/mustard-yellow-chinnon-embroidered-palazzo-suit-lstv130380-1.jpg"></div>
+ <div class="details">
+     <div>Mustard Yellow Palazzo Suit</div>
+    <div> Price: 6400.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Mustard-Yellow-Palazzo-Suit" data-name="Mustard-Yellow-Palazzo-Suit" data-price="6400">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/500x750/a12781a7f2ccb3d663f7fd01e1bd2e4e/d/a/dark-green-zari-embroidered-palazzo-suit-for-mehndi-lstv130856-1.jpg"></div>
+    
+ <div class="details">
+     <div>Dark Green Palazzo Suit </div>
+    <div> Price: 7250.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Dark-Green-Palazzo-Suit " data-name="Dark-Green-Palazzo-Suit" data-price="7250">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/500x750/a12781a7f2ccb3d663f7fd01e1bd2e4e/n/e/net-zari-embroidered-dusty-pink-straight-cut-sharara-suit-lstv127726-1.jpg"></div>
+    
+ <div class="details">
+     <div>Dusty-Pink Embroided Garara</div>
+    <div> Price: 8000.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Dusty-Pink-Embroided-Garara" data-name="Dusty-Pink-Embroided-Garara" data-price="8000">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/500x750/a12781a7f2ccb3d663f7fd01e1bd2e4e/w/e/wedding-wear-prussian-blue-embroidered-silk-anarkali-suit-lstv124415-1.jpg">
+        </div>
+    
+ <div class="details">
+     <div>Prussian-Blue Anarkali suit</div>
+    <div> Price: 7456.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Prussian-Blue-Anarkali-suit" data-name="Prussian-Blue-Anarkali-suit" data-price="7456">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-georgette-pakistani-suit-in-light-purple-v1-kch6152.jpg"></div>
+    
+ <div class="details">
+     <div>Light-Purple Pakistani-suit </div>
+    <div> Price: 5690.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Light-Purple-Pakistani-suit" data-name="Light-Purple-Pakistani-suit" data-price="5690">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-organza-front-slit-pakistani-suit-in-off-white-v3-kch12622.jpg"></div>
+    
+ <div class="details">
+     <div>Off White Printed Pakistani-suit</div>
+    <div> Price- 6780.00k</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Off-White-Printed-Pakistani-suit" data-name="Off-White-Printed-Pakistani-suit" data-price="6780">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-georgette-pakistani-suit-in-red-v1-kch11974.jpg"></div>
+    
+ <div class="details">
+     <div>Red Embroided Pakistani-suit </div>
+    <div> Price: 7548.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Red-Embroided-Pakistani-suit " data-name="Red-Embroided-Pakistani-suit" data-price="7548">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+ </div> 
+</div>
+<div class="cards" id="cards" style=" ">
+    <div> <img class="weddingImg" src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/b/a/bandhej-printed-chinon-silk-pakistani-suit-in-shaded-green-v1-kch14577.jpg"></div>
+    
+ <div class="details">
+     <div>Green Printed Pakistani-suit  </div>
+    <div> Price: 7677.00TK</div>
+    <button class="cart-button" id="dress" data-value="0" data-id="Green-Printed-Pakistani-suit " data-name="Green-Printed-Pakistani-suit" data-price="7677">
+      <span class="add-to-cart">Add to cart</span>
+      <span class="added">Added</span>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-box"></i>
+    </button>
+
+
+
+ 
+ </div> 
+</div>
+</div>
+    </div>
+
+
+  <!-- FOOTER -->
+<div class="subscribe">
+    <div class="newsletter"><p>JOIN OUR NEWSLETTER </p></div>
+    <div><input type="email" placeholder="Enter email..." style="width: 300px; height: 35px; margin-left: 40px;"></div>
+    
+</div>
+<div class="footerbox" style="">
+  <div class="footer" >
+    
+    <div>
+      <ul type="none";>
+        <li class="list-header">CLIENT SERVICES</li>
+        <li><a href="contactUs.html" class="footer-list">Contact Us</a></li>
+        <li><a href="appointment.html" class="footer-list">Book an Appointment</a></li>
+        <li><a href="services.html" class="footer-list">Our Services</a></li>
+        <li><a href="faq.html" class="footer-list">FAQs</a></li>
+        
+      </ul>
+    </div>
+    <div>
+      <ul type="none">
+        <li class="list-header">LEGAL & PRIVACY</li>
+        <li><a href="privacy.html" class="footer-list">Privacy Policy</a></li>
+        <li><a href="cookie.html" class="footer-list">Cookie Policy</a></li>
+        <li><a href="terms.html" class="footer-list">Website terms of use</a></li>
+        <li><a href="code.html" class="footer-list">Code of conduct</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul type="none">
+      <li class="list-header">CORPORATE</li>
+      <li><a href="aboutUs.html" class="footer-list">About Us</a></li>
+      <li><a href="locations.html" class="footer-list">Store Locations</a></li>
+      <li><a href="career.html" class="footer-list">Career with us</a></li>
+    </ul>
+    </div>
+
+  </div>
+  <div style="justify-self: end;">
+    <a href="https://www.facebook.com/BRAC.AARONG/"><img class="footer-sns" src="pic/fblogo.png" alt="" style=""></a>
+    <a href="https://www.instagram.com/brac.aarong/"><img class="footer-sns" src="pic/iglogo.webp" alt="" style="" ></a>
+    <a href="https://www.youtube.com/myaarongrewards"><img class="footer-sns" src="pic/ytlogo.webp" alt="" style="" ></a>
+    
+    </div>
+</div>
+<hr>
+<div class="credits"><p >© RENABELLE - ALL RIGHTS RESERVED - P. IVA 00900421009 LICENZA SIAE N. 3566/I/1417 - Renabelle Fashion Official Online Store</p></div>
+</div>
+
+<script src="java.js"></script>
+   
+</body>
+</html>
